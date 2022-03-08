@@ -1,0 +1,13 @@
+ng add @fontawesome/angular-fontawesome  // dont need the <version> b/c angular knows
+
+To troubleshoot, in console go all the way to network and look for headers and look for statuses of 200 or errors
+
+https://ncjamieson.com/understanding-subjects/
+
+npm install json-server
+npm run server
+
+
+ ng g service services/ui
+
+ ng g component component/footer

@@ -14,6 +14,11 @@ declare const require: {
   };
 };
 
+let myString : string;
+myString = "This is a string";
+
+let myString2 : string = "This is a second string";  // another way
+
 // First, initialize the Angular testing environment.
 getTestBed().initTestEnvironment(
   BrowserDynamicTestingModule,

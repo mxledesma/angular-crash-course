@@ -1,2 +1,13 @@
-<app-task-item *ngFor= "let task of allTasks" [taskItems]="task"></app-task-item>  
-<!-- within let needs "" -->
+
+<!-- tasks.component.html is the parent componenet -->
+<app-add-task (onAddTask)="addTask($event)"></app-add-task>
+<app-task-item 
+*ngFor= "let task of allTasks" 
+[taskItems]="task"
+(onDeleteTask)="deleteTask(task)"
+(onToggleReminder)="toggleReminder(task)"  
+></app-task-item>  
+<!-- onToggleReminder is defined as an emitter in task-item.compponent.ts and toggleReminder is a function 
+in task.component.ts-->
+<!-- within let needs "" double quotes, also, [] are property binding for [taskItems] from task-item.component.ts 
+    coming from component and   @Input()  taskItems!: Task; is in task-item-component.ts -->

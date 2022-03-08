@@ -1,5 +1,8 @@
 <header>
     <h1>{{title}}</h1>
-    <app-button color="green"  text="Add" (btnClick)="toggleAddTask()"></app-button>  <!-- Note this is for the app button-->
-</header>
+    <!-- <app-button color="green"  text="Add" (btnClick)="toggleAddTask()"></app-button>  Note this is for the app button -->
+    <!-- Button is embedded in the header also color,text is initialized in button.component.ts -->
+    <app-button *ngIf="hasRoute('/')" color="{{showAddTask ? 'red': 'green'}}"  text="{{showAddTask ? 'Close': 'Add a Task' }}" (btnClick)="toggleAddTask()"></app-button>
+</header> 
+<!-- want to show only in the task page -->
 

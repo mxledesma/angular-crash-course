@@ -1,2 +1,4 @@
+<!-- [ngStyle] is input for css style , color,text is intialized in button.component.ts.
+events are with parenthesis from view to component -->
 <button [ngStyle] = "{'background-color':color}" class="btn" (click)="onClick()">{{text}}</button>
 <!-- the (click) needs to be in parenthesis because of an event onClick() is a method in .ts file-->

@@ -45,6 +45,10 @@ body {
   width: 100%;
 }
 
+.add-form{
+  margin-bottom:40px;
+}
+
 .form-control {
   margin: 20px 0;
 }

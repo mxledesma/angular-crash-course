@@ -10,6 +10,7 @@ export class ButtonComponent implements OnInit {
   @Input() color!: string;
   @Output() btnClick = new EventEmitter();
 
+  
   constructor() { 
 
   }
